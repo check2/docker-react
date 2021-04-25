@@ -1,3 +1,27 @@
+Reference:
+C:\dp\bct\udemy\DockerAndKubernetes\frontend>docker run -it -p 3000:3000 -v /app/node_modules  -v "C:\dp\bct\udemy\DockerAndKubernetes\frontend":/app -e CHOKIDAR_USEPOLLING=true dp0002:frontend
+
+=======================
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+
+RUN npm install
+
+copy . .
+
+RUN npm run build
+
+
+From nginx
+
+COPY --from=0 /app/build /usr/share/nginx/html
+
+========================
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

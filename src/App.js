@@ -10,7 +10,8 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.          
         </p>
         <p>Is that correct? correct..........-_-"</p>
-        <p>Not work.  Is that correct.  Hope so...  </p>
+        <p>work.  Is that correct.  Hope so...  </p>
+        <p>Checking... 1  </p>
         <a
           className="App-link"
           href="https://reactjs.org"
